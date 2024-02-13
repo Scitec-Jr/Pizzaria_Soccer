@@ -1,5 +1,47 @@
 .bg-img{
-    background-image: url(src\background.jpg);
+    background-image: url(src/background.jpg);
     background-size: cover;
     background-position: center center;
+}
+
+.sobre {
+    color: white;
+    font-size: 3rem;
+}
+
+@font-face {
+    font-family: 'Neon-Light';
+    src: url('fonte/Neon-Light.otf') format('woff2'),
+         url('fonte/Neon-Light.otf') format('woff');
+    /* Adicione mais formatos se necessário */
+}
+.sobre h1 {
+    font-family: 'Neon-Light', sans-serif;
+}
+
+@font-face {
+    font-family: 'Bebas-Neue-Bold';
+    src: url('fonte/Bebas-Neue-Bold.otf') format('woff2'),
+         url('fonte/Bebas-Neue-Bold.otf') format('woff');
+    /* Adicione mais formatos se necessário */
+}
+
+
+/*Seção Sobre - Molinari */
+
+.sobre p, .sobre h2 {
+    font-family: 'Bebas-Neue-Bold', sans-serif;
+}
+
+.sobre h2 {
+    font-size: 5rem;
+    padding-bottom: 3rem;
+}
+
+.about-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15rem;
+    padding-right:20rem;
 }
