@@ -1,5 +1,30 @@
 .bg-img{
-    background-image: url(src\background.jpg);
+    background-image: url(src/background.jpg);
     background-size: cover;
     background-position: center center;
+}
+
+.quem-somos {
+    color: white;
+    font-size: 2rem;
+}
+
+@font-face {
+    font-family: 'Neon-Light';
+    src: url('fonte/Neon-Light.otf') format('woff2'),
+         url('fonte/Neon-Light.otf') format('woff');
+    /* Adicione mais formatos se necessário */
+}
+.quem-somos h1 {
+    font-family: 'Neon-Light', sans-serif;
+}
+
+@font-face {
+    font-family: 'Bebas-Neue-Bold';
+    src: url('fonte/Bebas-Neue-Bold.otf') format('woff2'),
+         url('fonte/Bebas-Neue-Bold.otf') format('woff');
+    /* Adicione mais formatos se necessário */
+}
+.quem-somos p {
+    font-family: 'Bebas-Neue-Bold', sans-serif;
 }
