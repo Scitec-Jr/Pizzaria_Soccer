@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzaria Soccer Station</title>
 
-    <link rel="style" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="js" href="main.js">
 
     <!-- Bootstrap -->
@@ -19,12 +19,34 @@
     <!-- Bootstrap -->
 
 </head>
-<body class="bg-img">
-    <section class="home">teste</section>
+  <body class="bg-img">
+    <section class="home">
+      <header class="home-header">
+        <img src="./src/home-assets/home-icon.png" alt="home-icon" class="home-icon">
+        <h3>QUEM SOMOS</h3>
+        <h3>NOSSAS SESSÕES</h3>
+        <h3>EVENTOS EXCLUSIVOS</h3>
+        <h3>LEVAR A SOCCER À SUA CIDADE</h3>
+        <h3>LOCALIZAÇÃO</h3>
+      </header>
+      <div class="home-container">
+        <video
+          class="home-video" 
+          src="./src/home-assets/home-video.mp4"
+          autoplay
+          loop
+        >
+          Erro ao carregar o vídeo!
+        </video>
+        <button class="home-button">
+          COMPRE SEU INGRESSO
+        </button>
+      </div>
+    </section>
     <section class="quem-somos"></section>
     <section class="sobre"></section>
     <section class="eventos"></section>
     <section class="localizacao"></section>
     <footer class="coontatos"></footer>
-</body>
+  </body>
 </html>

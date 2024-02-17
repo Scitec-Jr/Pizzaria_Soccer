@@ -1,5 +1,56 @@
-.bg-img{
-    background-image: url(src\background.jpg);
+.bg-img {
+    background-image: url(src/background.jpg);
     background-size: cover;
     background-position: center center;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'Bebas-Neue-Bold';
+  src: url('fonte/Bebas-Neue-Bold.otf') format('woff2'), url('fonte/Bebas-Neue-Bold.otf') format('woff');
+}
+
+.home-icon {
+  width: 91px;
+  height: 91px;
+}
+
+.home-header {
+  width: 100vw;
+  height: 107px;
+  background-color: #AB0E63;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 52px;
+  font: 'Bebas-Neue-Bold', sans-serif;
+  color: #FFFFFF;
+}
+
+.home-video {
+  width: 100vw;
+  border: none;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #27B5AB;
+  width: 549px;
+  height: 110px;
+  border-radius: 64px;
+  border: none;
+  font: 'Bebas-Neue-Bold', sans-serif;
+  color: #FFFFFF;
+  font-size: 36px;
+  margin: 20px;
 }
