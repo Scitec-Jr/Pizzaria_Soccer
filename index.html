@@ -5,18 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzaria Soccer Station</title>
 
-      <!-- Bootstrap -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="js" href="main.js">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-<!-- Bootstrap -->
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
 
 </head>
-<body>
-    
-</body>
+  <body class="bg-img">
+    <section class="home">
+      <header class="home-header">
+        <img src="./src/home-assets/home-icon.png" alt="home-icon" class="home-icon">
+        <h3>QUEM SOMOS</h3>
+        <h3>NOSSAS SESSÕES</h3>
+        <h3>EVENTOS EXCLUSIVOS</h3>
+        <h3>LEVAR A SOCCER À SUA CIDADE</h3>
+        <h3>LOCALIZAÇÃO</h3>
+      </header>
+      <div class="home-container">
+        <video
+          class="home-video" 
+          src="./src/home-assets/home-video.mp4"
+          autoplay
+          loop
+        >
+          Erro ao carregar o vídeo!
+        </video>
+        <button class="home-button">
+          COMPRE SEU INGRESSO
+        </button>
+      </div>
+    </section>
+    <section class="quem-somos"></section>
+    <section class="sobre"></section>
+    <section class="eventos"></section>
+    <section class="localizacao"></section>
+    <footer class="coontatos"></footer>
+  </body>
 </html>
