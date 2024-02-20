@@ -4,6 +4,8 @@
     background-position: center center;
 }
 
+
+
 .sobre {
     color: white;
     font-size: 2rem;
@@ -14,6 +16,10 @@
     src: url('fonte/Neon-Light.otf') format('woff2'),
          url('fonte/Neon-Light.otf') format('woff');
     /* Adicione mais formatos se necessário */
+}
+
+.quem-somos h1 {
+    font-family: 'Neon-Light', sans-serif;
 }
 .sobre h1 {
     font-family: 'Neon-Light', sans-serif;
@@ -26,6 +32,10 @@
     src: url('fonte/Bebas-Neue-Bold.otf') format('woff2'),
          url('fonte/Bebas-Neue-Bold.otf') format('woff');
     /* Adicione mais formatos se necessário */
+}
+
+.quem-somos p {
+    font-family: 'Bebas-Neue-Bold', sans-serif;
 }
 
 
