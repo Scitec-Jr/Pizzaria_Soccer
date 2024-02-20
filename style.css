@@ -4,11 +4,17 @@
     background-position: center center;
 }
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: white;
+}
+.sobre {
+    color: white;
+    font-size: 2rem;
+
 }
 
 @font-face {
@@ -17,6 +23,7 @@
          url('fonte/Neon-Light.otf') format('woff');
     /* Adicione mais formatos se necessário */
 }
+
 .quem-somos h1, .eventos h1 {
     font-family: 'Neon-Light', sans-serif;
     font-size: 50px;
@@ -38,6 +45,66 @@
 
 .event-btn {
     font-family: 'Bebas-Neue-Regular', sans-serif;
+=======
+.sobre h1 {
+    font-family: 'Neon-Light', sans-serif;
+    font-size: 4rem;
+    padding-left: 10rem;
+}
+
+@font-face {
+    font-family: 'Bebas-Neue-Bold';
+    src: url('fonte/Bebas-Neue-Bold.otf') format('woff2'),
+         url('fonte/Bebas-Neue-Bold.otf') format('woff');
+    /* Adicione mais formatos se necessário */
+}
+
+
+/*Seção Sobre - Molinari */
+
+.sobre p, .sobre h2 {
+    font-family: 'Bebas-Neue-Bold', sans-serif;
+}
+
+.sobre h2 {
+    font-size: 5rem;
+    padding-bottom: 4rem;
+}
+
+.about-box {
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+    padding: 5rem 25rem 5rem 7rem;
+}
+
+.box-right {
+    padding-left: 25rem;
+    padding-right: 7rem;
+}
+
+.about-box-img img {
+    max-width: 35rem;
+}
+
+.box-right {
+    text-align: right;
+}
+
+.about-title {
+    text-align: center;
+    font-size: 7rem;
+    text-shadow: #AB0E63 0 4px;
+    font-family: 'Bebas-Neue-Bold', sans-serif;
+    -webkit-text-stroke: 2px black;
+    color: #27B5AB;
+    padding-top: 4rem;
+    padding-bottom: 12rem;
+}
+
+.about-btn {
+    font-family: 'Bebas-Neue-Bold', sans-serif;
+
     font-weight: 0;
     font-size: 3rem;
     color: #fff;
@@ -56,10 +123,17 @@
 }
 
 .event-btn:hover{
+  
+.about-btn:hover{
+
     transition : 1000ms;
     padding: 10px 50px;
     transform : translateY(-0px);
     background-color: #fff;
     color: #27B5AB;
     border: solid 2px #27B5AB;
+
 }
+
+}
+
