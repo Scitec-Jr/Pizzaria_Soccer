@@ -24,7 +24,7 @@
     /* Adicione mais formatos se necessário */
 }
 
-.quem-somos h1, .eventos h1 {
+.quem-somos h1, .eventos h1, .sobre h1 {
     font-family: 'Neon-Light', sans-serif;
     font-size: 50px;
     line-height: 48px;
@@ -47,9 +47,11 @@
     font-family: 'Bebas-Neue-Regular', sans-serif;
 }
 .sobre h1 {
-    font-family: 'Neon-Light', sans-serif;
-    font-size: 4rem;
     padding-left: 10rem;
+}
+
+.eventos p {
+    padding-top: 3rem;
 }
 
 @font-face {
@@ -186,4 +188,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.padding-left {
+    padding-left: 7rem;
 }
