@@ -4,17 +4,11 @@
     background-position: center center;
 }
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: white;
-}
-.sobre {
-    color: white;
-    font-size: 2rem;
-
 }
 
 @font-face {
@@ -24,32 +18,11 @@
     /* Adicione mais formatos se necessário */
 }
 
-.quem-somos h1, .eventos h1 {
-    font-family: 'Neon-Light', sans-serif;
-    font-size: 50px;
-    line-height: 48px;
-}
-
 @font-face {
     font-family: 'Bebas-Neue-Regular';
     src: url('fonte/Bebas-Neue-Regular.otf') format('woff2'),
          url('fonte/Bebas-Neue-Regular.otf') format('woff');
     /* Adicione mais formatos se necessário */
-}
-.quem-somos p, .eventos p {
-    font-family: 'Bebas-Neue-Regular', sans-serif;
-    font-size: 35px;
-    line-height: 42px;
-
-}
-
-.event-btn {
-    font-family: 'Bebas-Neue-Regular', sans-serif;
-=======
-.sobre h1 {
-    font-family: 'Neon-Light', sans-serif;
-    font-size: 4rem;
-    padding-left: 10rem;
 }
 
 @font-face {
@@ -59,6 +32,115 @@
     /* Adicione mais formatos se necessário */
 }
 
+/* Seção Home - Willy */
+
+/* Estilo para a transição suave */
+html {
+    scroll-behavior: smooth;
+}
+
+.home-header a {
+    color: #FFFFFF;
+}
+
+.home-header a:hover {
+    color: #27B5AB;
+}
+
+.home-icon {
+    width: 91px;
+    height: 91px;
+}
+  
+.home-header {
+    width: 100vw;
+    height: 107px;
+    background-color: #AB0E63;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 52px;
+    font: 'Bebas-Neue-Bold', sans-serif;
+    color: #FFFFFF;
+}
+
+.home-video {
+    width: 100vw;
+    border: none;
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #27B5AB;
+    width: 549px;
+    height: 110px;
+    border-radius: 64px;
+    border: none;
+    font: 'Bebas-Neue-Bold', sans-serif;
+    color: #FFFFFF;
+    font-size: 36px;
+    margin: 20px;
+}
+
+.home-button:hover{
+
+    transition : 1000ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #27B5AB;
+    border: solid 2px #27B5AB;
+
+}
+
+/* Seção Quem Somos - Belchior */
+
+.quem-somos h1, .sobre h1 {
+    font-family: 'Neon-Light', sans-serif;
+    font-size: 4rem;
+    padding-left: 10rem;
+}
+
+.quem-somos p {
+    font-family: 'Bebas-Neue-Bold', sans-serif;
+    font-size: 2.5rem;
+}
+
+.quem-somos-video {
+    padding-left: 8rem;
+}
+
+.quem-somos-box {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    padding: 0rem 20rem 5rem 8rem;
+}
+
+.sobre {
+    font-size: 2rem;
+}
+
+.sobre h1 {
+    padding-left: 10rem;
+}
+
+.eventos p {
+    padding-top: 3rem;
+}
+
+/* .sobre p {
+    width: 60%;
+} */
 
 /*Seção Sobre - Molinari */
 
@@ -94,12 +176,19 @@
 .about-title {
     text-align: center;
     font-size: 7rem;
-    text-shadow: #AB0E63 0 4px;
     font-family: 'Bebas-Neue-Bold', sans-serif;
     -webkit-text-stroke: 2px black;
     color: #27B5AB;
     padding-top: 4rem;
     padding-bottom: 12rem;
+}
+
+.magenta-shadow {
+    text-shadow: #AB0E63 0 4px;
+}
+
+.purple-shadow {
+    text-shadow: #6E00EE 0 4px;
 }
 
 .about-btn {
@@ -122,8 +211,6 @@
     margin-top: 3rem;
 }
 
-.event-btn:hover{
-  
 .about-btn:hover{
 
     transition : 1000ms;
@@ -135,5 +222,176 @@
 
 }
 
+.gallery-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    height: 333px;
+    background-color: white;
+}
+
+
+/* Seção Eventos - Belchior */
+
+.event-title {
+    font-family: 'Neon-Light', sans-serif;
+    font-size: 7rem;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+}
+
+.eventos h2 {
+    font-family: 'Neon-Light', sans-serif;
+    font-size: 5rem;
+    padding-left: 15rem;
+    padding-top: 12rem;
+}
+
+.eventos p {
+    font-family: 'Bebas-Neue-Bold', sans-serif;
+    font-size: 3rem;
+    width: 84%;
+}
+
+.evento1-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    padding: 0rem 15rem 0rem 15rem;
+}
+
+.evento1-video {
+    margin-top: -10rem;
+}
+
+.evento1-btn {
+    font-family: 'Bebas-Neue-Bold', sans-serif;
+
+    font-weight: 0;
+    font-size: 3rem;
+    color: black;
+    background-color: #27B5AB;
+    padding: 10px 30px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 50px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 3rem;
+}
+
+.evento1-btn:hover{
+
+    transition : 1000ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #27B5AB;
+    border: solid 2px #27B5AB;
+
+}
+
+.centered-btn {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 7rem;
+}
+
+
+.evento2-box {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    padding-left: 50rem;
+}
+
+.evento2-btn {
+    font-family: 'Bebas-Neue-Bold', sans-serif;
+
+    font-weight: 0;
+    font-size: 3rem;
+    color: black;
+    background-color: #AB0E63;
+    padding: 10px 30px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 50px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 3rem;
+}
+
+.evento2-btn:hover{
+
+    transition : 1000ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #27B5AB;
+    border: solid 2px #27B5AB;
+
+}
+
+
+.evento3-box {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    padding-left: 50rem;
+}
+
+.evento3-btn {
+    font-family: 'Bebas-Neue-Bold', sans-serif;
+
+    font-weight: 0;
+    font-size: 3rem;
+    color: black;
+    background-color: #27B5AB;
+    padding: 10px 30px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 50px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 3rem;
+}
+
+.evento3-btn:hover{
+
+    transition : 1000ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #27B5AB;
+    border: solid 2px #27B5AB;
+
+}
+
+/* Seção Localização */
+
+/* Seção Footer */
+
+.contatos {
+    padding-top: 12rem;
+}
