@@ -8,7 +8,17 @@
 
 @font-face {
   font-family: 'Bebas-Neue-Bold';
-  src: url('fonte/Bebas-Neue-Bold.otf') format('woff2'), url('fonte/Bebas-Neue-Bold.otf') format('woff');
+  src: url('./fonte/Bebas-Neue-Bold.otf') format('woff2'), url('./fonte/Bebas-Neue-Bold.otf') format('woff');
+}
+
+@font-face {
+  font-family: 'Neon-Light';
+  src: url('./fonte/Neon-Light.otf') format('woff2'), url('./fonte/Neon-Light.otf') format('woff');
+}
+
+@font-face {
+  font-family: 'Bebas-Neue-Regular';
+  src: url('fonte/Bebas-Neue-Regular.otf') format('woff2'), url('fonte/Bebas-Neue-Regular.otf') format('woff');
 }
 
 .home-icon {
@@ -53,4 +63,114 @@
   color: #FFFFFF;
   font-size: 36px;
   margin: 20px;
+}
+
+.home-text {
+  font: 'Neon-Light', sans-serif;
+  font-size: 45px;
+  color: #FFFFFF;
+  padding: 8px;
+  text-align: center;
+}
+
+.localizacao-title {
+  font: 'Neon-Light', sans-serif;
+  font-size: 48px;
+  color: #FFFFFF;
+  margin-left: 52px;
+  text-align: left;
+}
+
+.enderecos-text {
+  font: 'Bebas-Neue-Bold', sans-serif;
+  font-size: 34px;
+  color: #FFFFFF;
+  padding: 8px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.localizacao-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 16px;
+}
+
+.map-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.localizacao-text {
+  font: 'Bebas-Neue-Regular', sans-serif;
+  font-size: 28px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.localizacao-google {
+  margin-top: 28px;
+  width: 300px;
+  height: 280px;
+  border-radius: 164px;
+}
+
+.contatos-container {
+  width: 100vw;
+  height: 240px;
+  background-color: #AB0E63;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 52px;
+  font: 'Bebas-Neue-Bold', sans-serif;
+  color: #FFFFFF;
+  margin-top: 64px;
+}
+
+.contato-logo {
+  width: 160px;
+  height: 160px;
+}
+
+.contatos-title {
+  font: 'Bebas-Neue-Bold', sans-serif;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+
+.contato-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contato-text {
+  font: 'Bebas-Neue-Bold', sans-serif;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+.contato-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.contato-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.phone-text {
+  font: 'Bebas-Neue-Bold', sans-serif;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-align: center;
 }
