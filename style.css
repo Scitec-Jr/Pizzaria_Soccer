@@ -7,18 +7,24 @@
 }
 
 @font-face {
-  font-family: 'Bebas-Neue-Bold';
-  src: url('./fonte/Bebas-Neue-Bold.otf') format('woff2'), url('./fonte/Bebas-Neue-Bold.otf') format('woff');
-}
-
-@font-face {
   font-family: 'Neon-Light';
-  src: url('./fonte/Neon-Light.otf') format('woff2'), url('./fonte/Neon-Light.otf') format('woff');
+  src: url('fonte/Neon-Light.otf') format('woff2'),
+       url('fonte/Neon-Light.otf') format('woff');
+  /* Adicione mais formatos se necessário */
 }
 
 @font-face {
   font-family: 'Bebas-Neue-Regular';
-  src: url('fonte/Bebas-Neue-Regular.otf') format('woff2'), url('fonte/Bebas-Neue-Regular.otf') format('woff');
+  src: url('fonte/Bebas-Neue-Regular.otf') format('woff2'),
+       url('fonte/Bebas-Neue-Regular.otf') format('woff');
+  /* Adicione mais formatos se necessário */
+}
+
+@font-face {
+  font-family: 'Bebas-Neue-Bold';
+  src: url('fonte/Bebas-Neue-Bold.otf') format('woff2'),
+       url('fonte/Bebas-Neue-Bold.otf') format('woff');
+  /* Adicione mais formatos se necessário */
 }
 
 .home-icon {
@@ -34,8 +40,13 @@
   align-items: center;
   justify-content: space-between;
   padding: 52px;
-  font: 'Bebas-Neue-Bold', sans-serif;
+}
+
+.header-text {
+  font-family: 'Bebas-Neue-Bold', sans-serif;
   color: #FFFFFF;
+  font-size: 30px;
+  line-height: 36px;
 }
 
 .home-video {
@@ -59,31 +70,38 @@
   height: 110px;
   border-radius: 64px;
   border: none;
-  font: 'Bebas-Neue-Bold', sans-serif;
+  font-family: 'Bebas-Neue-Bold', sans-serif;
   color: #FFFFFF;
-  font-size: 36px;
+  font-size: 50px;
   margin: 20px;
 }
 
-.home-text {
-  font: 'Neon-Light', sans-serif;
-  font-size: 45px;
-  color: #FFFFFF;
-  padding: 8px;
+.home-text-align {
   text-align: center;
 }
 
-.localizacao-title {
-  font: 'Neon-Light', sans-serif;
-  font-size: 48px;
+.home-text-neon {
+  font-family: 'Neon-Light', sans-serif;
+  font-size: 45px;
+}
+
+.home-text-bebas {
+  font-family: 'Bebas-Neue-Regular', sans-serif;
+  font-size: 45px;
   color: #FFFFFF;
-  margin-left: 52px;
-  text-align: left;
+}
+
+.localizacao-title {
+  font-family: 'Neon-Light', sans-serif;
+  font-size: 50px;
+  line-height: 48px;
+  color: #FFFFFF;
+  margin-left: 64px;
 }
 
 .enderecos-text {
-  font: 'Bebas-Neue-Bold', sans-serif;
-  font-size: 34px;
+  font-family: 'Bebas-Neue-Bold', sans-serif;
+  font-size: 37px;
   color: #FFFFFF;
   padding: 8px;
   text-align: center;
@@ -94,7 +112,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 140px;
   padding: 16px;
 }
 
@@ -106,8 +124,8 @@
 }
 
 .localizacao-text {
-  font: 'Bebas-Neue-Regular', sans-serif;
-  font-size: 28px;
+  font-family: 'Bebas-Neue-Regular', sans-serif;
+  font-size: 30px;
   color: #FFFFFF;
   text-align: center;
 }
@@ -126,8 +144,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 52px;
-  font: 'Bebas-Neue-Bold', sans-serif;
+  padding: 96px;
+  font-family: 'Bebas-Neue-Bold', sans-serif;
   color: #FFFFFF;
   margin-top: 64px;
 }
@@ -138,8 +156,8 @@
 }
 
 .contatos-title {
-  font: 'Bebas-Neue-Bold', sans-serif;
-  font-size: 40px;
+  font-family: 'Bebas-Neue-Bold', sans-serif;
+  font-size: 65px;
   color: #FFFFFF;
 }
 
@@ -151,8 +169,8 @@
 }
 
 .contato-text {
-  font: 'Bebas-Neue-Bold', sans-serif;
-  font-size: 30px;
+  font-family: 'Bebas-Neue-Regular', sans-serif;
+  font-size: 50px;
   color: #FFFFFF;
 }
 
@@ -169,8 +187,8 @@
 }
 
 .phone-text {
-  font: 'Bebas-Neue-Bold', sans-serif;
-  font-size: 24px;
+  font-family: 'Bebas-Neue-Regular', sans-serif;
+  font-size: 30px;
   color: #FFFFFF;
   text-align: center;
 }
