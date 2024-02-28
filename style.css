@@ -47,6 +47,7 @@
   color: #FFFFFF;
   font-size: 30px;
   line-height: 36px;
+  cursor: pointer;
 }
 
 .home-video {
@@ -59,6 +60,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
 
 .home-button {
@@ -76,8 +78,19 @@
   margin: 20px;
 }
 
+.position-absolute {
+  position: absolute;
+  width: 100vw;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; 
+  padding: 120px;
+}
+
 .home-text-align {
   text-align: center;
+  color: white;
 }
 
 .home-text-neon {
@@ -88,7 +101,6 @@
 .home-text-bebas {
   font-family: 'Bebas-Neue-Regular', sans-serif;
   font-size: 45px;
-  color: #FFFFFF;
 }
 
 .localizacao-title {
@@ -144,7 +156,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 96px;
+  padding: 58px;
   font-family: 'Bebas-Neue-Bold', sans-serif;
   color: #FFFFFF;
   margin-top: 64px;
