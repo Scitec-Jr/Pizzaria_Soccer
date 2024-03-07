@@ -204,9 +204,6 @@ html {
     border-radius: 50px;
     transition : 1000ms;
     transform: translateY(0);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     cursor: pointer;
     margin-top: 3rem;
 }
@@ -222,6 +219,10 @@ html {
 
 }
 
+.about-box-txt > p {
+    margin-bottom: 5rem;
+}
+
 .gallery-section {
     display: flex;
     flex-direction: column;
@@ -229,13 +230,16 @@ html {
     align-items: center;
 }
 
-.galeria {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.carousel {
     width: 750px;
-    height: 333px;
-    background-color: white;
+    height: 500px;
+}
+
+.carousel-item > img {
+    max-height: 500px;
+    object-fit: cover;
+/* or
+  object-fit: cover; */
 }
 
 
@@ -286,9 +290,6 @@ html {
     border-radius: 50px;
     transition : 1000ms;
     transform: translateY(0);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     cursor: pointer;
     margin-top: 3rem;
 }
