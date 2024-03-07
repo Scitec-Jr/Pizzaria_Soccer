@@ -20,8 +20,42 @@
     <!-- Bootstrap -->
 
 </head>
-<body class="bg-img">
-    
+  <body class="bg-img">
+    <section class="home">
+      <header class="home-header">
+        <img src="./src/home-assets/home-icon.png" alt="home-icon" class="home-icon">
+        <a class="header-text">QUEM SOMOS</a>
+        <a class="header-text">NOSSAS SESSÕES</a>
+        <a class="header-text">EVENTOS EXCLUSIVOS</a>
+        <a class="header-text">LEVAR A SOCCER À SUA CIDADE</a>
+        <a class="header-text">LOCALIZAÇÃO</a>
+      </header>
+      <div class="home-container">
+        <video
+          class="home-video" 
+          src="./src/home-assets/home-video.mp4"
+          loop
+          controls
+        >
+          Erro ao carregar o vídeo!
+        </video>
+
+        <div class="d-none d-sm-block position-absolute">
+          <h3 class="home-text-align">
+            <span class="home-text-bebas">O que acontece se você juntar a</span>
+            <span class="home-text-neon">paixão por futebol</span>
+            <span class="home-text-bebas">em</span>
+            <span class="home-text-neon">ambiente tecnológico</span>
+            <span class="home-text-bebas">e uma</span>
+            <span class="home-text-neon">culinária diferenciada?</span>
+          </h3>
+        </div>
+        
+        <button class="home-button">
+          COMPRE SEU INGRESSO
+        </button>
+      </div>
+    </section>
     <section class="quem-somos" id="quem-somos">
         <h1>QUEM SOMOS</h1>
         <div class="quem-somos-box">
@@ -186,6 +220,79 @@
             </div>
         </div>
     </section>
+    <section class="localizacao">
+        <h1 class="localizacao-title">LOCALIZAÇÃO</h1>
+        <h3 class="enderecos-text">NOSSOS ENDEREÇOS:</h3>
+        <div class="localizacao-container">
+          <div class="map-box">
+            <h4 class="localizacao-text">
+              Rua Juquis, 305 - Moema
+            </h4>
+            <h4 class="localizacao-text">
+              São Paulo-SP, CEP: 04081-010
+            </h4>
+            <iframe class="localizacao-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.8839646385104!2d-46.667649325387835!3d-23.6084940633241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a0f2f6446c1%3A0x51864a47adcc51a!2sR.%20Juquis%2C%20305%20-%20Moema%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004081-010!5e0!3m2!1spt-BR!2sbr!4v1709044595542!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="map-box">
+            <h4 class="localizacao-text">
+              Rua Francisco Marengo, 1641 - Tatuapé
+            </h4>
+            <h4 class="localizacao-text">
+              São Paulo-SP, CEP: 03313-001
+            </h4>
+            <iframe class="localizacao-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.467892578807!2d-46.55936682539016!3d-23.551633361233527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e87b1d9048f%3A0xb8afa089132096b!2sR.%20Francisco%20Marengo%2C%201641%20-%20Tatuap%C3%A9%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003313-001!5e0!3m2!1spt-BR!2sbr!4v1709044987257!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="map-box">
+            <h4 class="localizacao-text">
+              R. São José, 933 - centro
+            </h4>
+            <h4 class="localizacao-text">
+              Ribeirão Preto - SP, CEP:14010-160
+            </h4>
+            <iframe class="localizacao-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.23328955176!2d-47.81099262548246!3d-21.182889578542184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bf816794d799%3A0xd599a0cdf63550be!2sR.%20S%C3%A3o%20Jos%C3%A9%2C%20933%20-%20Centro%2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014010-160!5e0!3m2!1spt-BR!2sbr!4v1709045075636!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </section>
+      <footer class="contatos">
+        <div class="contatos-container">
+          <img class="contato-logo" src="./src/contato-logo.png">
+          <h1 class="contatos-title">CONTATOS:</h1>
+          <div class="contato-box">
+            <h3 class="contato-text">MOEMA</h3>
+            <div class="contato-number">
+              <img src="./src/whats-icon.png" class="contato-icon">
+              <h3 class="phone-text">+55 11 91658-5561</h3>
+            </div>
+            <div class="contato-number">
+              <img src="./src/call-icon.png" class="contato-icon">
+              <h3 class="phone-text">+55 11 4485-##### </h3>
+            </div>
+          </div>
+          <div class="contato-box">
+            <h3 class="contato-text">TAUBATÉ</h3>
+            <div class="contato-number">
+              <img src="./src/whats-icon.png" class="contato-icon">
+              <h3 class="phone-text">+55 11 91658-5561</h3>
+            </div>
+            <div class="contato-number">
+              <img src="./src/call-icon.png" class="contato-icon">
+              <h3 class="phone-text">+55 11 4485-##### </h3>
+            </div>
+          </div>
+          <div class="contato-box">
+            <h3 class="contato-text">RIBEIRÃO PRETO</h3>
+            <div class="contato-number">
+              <img src="./src/whats-icon.png" class="contato-icon">
+              <h3 class="phone-text">+55 11 91658-5561</h3>
+            </div>
+            <div class="contato-number">
+              <img src="./src/call-icon.png" class="contato-icon">
+              <h3 class="phone-text">+55 11 4485-##### </h3>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </body>
 
     <section class="localizacao" id="localizacao"></section>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
