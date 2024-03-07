@@ -32,6 +32,7 @@
     /* Adicione mais formatos se necessário */
 }
 
+
 /* Seção Home - Willy */
 
 /* Estilo para a transição suave */
@@ -105,6 +106,12 @@ html {
 /* Seção Quem Somos - Belchior */
 
 .quem-somos h1, .sobre h1 {
+
+.event-btn {
+    font-family: 'Bebas-Neue-Regular', sans-serif;
+}
+.sobre h1 {
+
     font-family: 'Neon-Light', sans-serif;
     font-size: 4rem;
     padding-left: 10rem;
