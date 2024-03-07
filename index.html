@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzaria Soccer Station</title>
 
-   <link rel="style" href="style.css">
     <link rel="stylesheet" href="style.css">
     <link rel="js" href="main.js">
 
     <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
     <!-- Optional theme -->
@@ -22,45 +22,66 @@
 </head>
 <body class="bg-img">
     <section class="home">
-        teste
-        <hr>
+        <header class="home-header">
+          <img src="./src/home-assets/home-icon.png" alt="home-icon" class="home-icon">
+          <a href="#quem-somos"><h3>QUEM SOMOS</h3></a>
+          <a href="#sobre"><h3>NOSSAS SESSÕES</h3></a>
+          <a href="#eventos"><h3>EVENTOS EXCLUSIVOS</h3></a>
+          <a href="#"><h3>LEVAR A SOCCER À SUA CIDADE</h3></a>
+          <a href="#localizacao"><h3>LOCALIZAÇÃO</h3></a>
+        </header>
+        <div class="home-container">
+          <video
+            class="home-video" 
+            src="./src/home-assets/home-video.mp4"
+            autoplay
+            loop
+          >
+            Erro ao carregar o vídeo!
+          </video>
+          <a class="home-button" href="https://www.sympla.com.br/produtor/soccerstation">
+            COMPRE SEU INGRESSO
+          </a>
+        </div>
     </section>
-        <div class="container-fluid ">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Quem Somos</h1>
-                </div>
-                <div class="col-md-6">
-                    <p class="text-justify">O Soccer Station oferece uma experiência imersiva para o amante de futebol. Com áreas digitais interativas, ambiente personalizado cheio de referência do esporte que é paixão nacional e uma gastronomia típica para você aproveitar com seus amigos e família.</p>
-                </div>
-                <div class="col-md-6">
+
+    
+    <section class="quem-somos" id="quem-somos">
+        <h1>QUEM SOMOS</h1>
+        <div class="quem-somos-box">
+            <br>
+                <p class="text-justify">
+                    O Soccer Station oferece uma experiência imersiva para o amante de futebol. Com áreas digitais interativas, ambiente personalizado cheio de referência do esporte que é paixão nacional e uma gastronomia típica para você aproveitar com seus amigos e família.
+                </p>
+                <div class="quem-somos-video">
                     <iframe width="425px" height="230px" src="https://www.youtube.com/embed/jfKfPfyJRdk" frameborder="0" allowfullscreen ></iframe>
                 </div>
-            </div>  
         </div>
     </section>
    
-    <section class="sobre">
+    <section class="sobre" id="sobre">
+   
+
         <h1>NOSSAS SESSÕES</h1>
         <div class="about-box">
             <div class="about-box-img">
                 <img src="src/about-intro.png">
             </div>
             <div class="about-box-txt intro-txt">
-                <p>
+                <p class="text-justify">
                     Nossas sessões tem duração de duas horas, em que você tem direito a um dos nossos sanduíches inspirados na culinária dos estádios, além de uma bebida e um acompanhamento. O ingresso te dá acesso completo às atrações e ao espaço do Soccer Station durante todo o tempo da sessão.
                 </p>
-                <button class="about-btn">COMPRA DE INGRESSO</button>
+                <button class="about-btn" href="https://www.sympla.com.br/produtor/soccerstation">COMPRA DE INGRESSO</button>
             </div>
         </div>
-        <div class="about-title">TENHA UMA IMERSÃO NO UNIVERSO DO FUTEBOL</div>
+        <div class="about-title magenta-shadow">TENHA UMA IMERSÃO NO UNIVERSO DO FUTEBOL</div>
         <div class="about-box">
             <div class="about-box-img">
                 <img src="src/about-img-1.png">
             </div>
             <div class="about-box-txt">
                 <h2>AMBIENTE TEMÁTICO</h2>
-                <p>
+                <p class="text-justify">
                     Se sinta dentro de um arcade e desafie suas habilidades futebolísticas de maneira exclusiva em nossas arenas. Projetadas para você se divertir testando sua capacidade de pontaria e seu controle de bola como você nunca viu. E você não precisa jogar sozinho, se quiser jogar em duplas ou trios, fique à vontade para se desafiar junto com seus amigos.
                 </p>
             </div>
@@ -68,7 +89,7 @@
         <div class="about-box box-right">
             <div class="about-box-txt">
                 <h2>GAMES INTERATIVOS</h2>
-                <p>
+                <p class="text-justify">
                     Nosso espaço é feito para você navegar se imergir na mistura entre futebol e tecnologia. Com diversas referências do passado, presente e futuro do esporte mais amado do país, venha ter uma experiência diferente de tudo que você já sentiu.
                 </p>
             </div>
@@ -82,13 +103,116 @@
             </div>
             <div class="about-box-txt">
                 <h2>GASTRONOMIA TÍPICA</h2>
-                <p>
+                <p class="text-justify">
                     Nossa cozinha é inspirada nos sanduíches de estádios, não só do Brasil, mas do mundo e busca elevar o refeição que é para apenas matar a sua fome para ter de fato uma experiência gastronômica.
                 </p>
-                <button class="about-btn">NOSSO CARDÁPIO</button>
+                <a class="about-btn" href="src/Cardápio 29.11.pdf" target="_blank">NOSSO CARDÁPIO</a>
+            </div>
+        </div>
+        <div class="gallery-section">
+            <div class="about-title purple-shadow">VENHA VIVER ESSA EXPERIÊNCIA</div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="src/carrossel/carrossel-1.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="src/carrossel/carrossel-2.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="src/carrossel/carrossel-3.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="src/carrossel/carrossel-4.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="src/carrossel/carrossel-5.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="src/carrossel/carrossel-6.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="src/carrossel/carrossel-7.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="src/carrossel/carrossel-8.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="src/carrossel/carrossel-9.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="src/carrossel/carrossel-11.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
     </section>
+
+    <section class="eventos" id="eventos">
+        <h1 class="event-title text-center">Eventos Exclusivos</h1>
+        
+        <h2>Soccer party</h2>
+        <div class="evento1-box">
+            <div>
+                <p class="text-justify">A soccer station oferece uma forma totalmente nova e divertida de comemorar o aniversário de uma criança.  Diversão para todas as habilidades e idades, um espaço com a sua família e amigos.</p>
+                <p class="text-justify">Se você tem idade suficiente para chutar uma bola, você tem idade suficiente para desfrutar de uma festa de aniversário na soccer station.</p>
+                <div class="centered-btn">
+                    <button class="evento1-btn">
+                        <img src="src/whatsapp-logo-rosa.png">
+                        QUER RESERVAR para uma FESTA ?
+                    </button>
+                </div>
+                <br>
+                <p class="text-center">Adoramos uma festa na soccer station e ficaríamos muito felizes por você nos escolher como local para esse dia especial</p>
+            </div>
+            <div class="evento1-video">
+                <iframe width="425px" height="800rem" src="https://www.youtube.com/embed/MeF9D-xB1SI" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <h2>Faça seu evento corporativo</h2>
+        <div class="evento2-box">
+            <div>
+                <p class="text-justify">Procurando maneiras de apimentar os dias da sua equipe? Não procure mais! realizar aquela confraternização corporativa aqui, na soccer station! Incluindo além do aluguel do espaço Sua equipe estará bem alimentada com uma variedade de lanches e bebidas para mantê-los energizados e prontos para competir por prêmios emocionantes.</p>
+                <button class="evento2-btn">
+                    <img src="src/whatsapp-logo-verde.png">
+                    Vamos realizar a social da empresa ?
+                </button>
+            </div>
+        </div>
+
+        <h2>Leve a soccer para sua cidade</h2>
+        <div class="evento3-box">
+            <div >
+                <p class="text-justify">Imagina levar o soccer station para região onde você mora ?       Agora você pode</p>
+                <button class="evento3-btn">
+                    <img src="src/formulario-logo.png">
+                    Responda o formulário
+                </button>
+            </div>
+        </div>
+    </section>
+
     <section class="eventos">
         <div class="container-fluid ">
             <div class="row align-items-center">
@@ -130,9 +254,20 @@
         </div>
     </section>
 
-    <section class="eventos"></section>
 
-    <section class="localizacao"></section>
-    <footer class="coontatos"></footer>
+    <section class="localizacao" id="localizacao"></section>
+    <footer class="contatos" id="contatos">
+        <header class="home-header">
+            <img src="./src/home-assets/home-icon.png" alt="home-icon" class="home-icon">
+            <a href="#quem-somos"><h3>QUEM SOMOS</h3></a>
+            <a href="#sobre"><h3>NOSSAS SESSÕES</h3></a>
+            <a href="#eventos"><h3>EVENTOS EXCLUSIVOS</h3></a>
+            <a href="#"><h3>LEVAR A SOCCER À SUA CIDADE</h3></a>
+            <a href="#localizacao"><h3>LOCALIZAÇÃO</h3></a>
+          </header>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
