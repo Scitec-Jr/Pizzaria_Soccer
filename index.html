@@ -22,14 +22,14 @@
 </head>
   <body class="bg-img">
     <section class="home">
-      <header class="home-header">
+      <header class="home-header navbar fixed-top colapse">
         <img src="./src/home-assets/home-icon.png" alt="home-icon" class="home-icon">
         <a href="#quem-somos" class="header-text">QUEM SOMOS</a>
         <a href="#sobre" class="header-text">NOSSAS SESSÕES</a>
         <a href="#eventos" class="header-text">EVENTOS EXCLUSIVOS</a>
         <a href="#localizacao" class="header-text">LOCALIZAÇÃO</a>
       </header>
-      <div class="home-container">
+      <div class="home-container container-fluid">
         <video
           class="home-video" 
           src="./src/home-assets/home-video.mp4"
@@ -39,7 +39,7 @@
           Erro ao carregar o vídeo!
         </video>
 
-        <div class="d-none d-sm-block position-absolute">
+        <div class="d-none d-sm-block position-absolute container-fluid">
           <h3 class="home-text-align">
             <span class="home-text-bebas">O que acontece se você juntar a</span>
             <span class="home-text-neon">paixão por futebol</span>
@@ -50,57 +50,59 @@
           </h3>
         </div>
         
-        <button class="home-button">
-          COMPRE SEU INGRESSO
+        <button class="home-button d-none d-sm">
+          <a href="https://wa.me/5511988832135">COMPRE SEU INGRESSO</a> 
         </button>
       </div>
     </section>
     <section class="quem-somos" id="quem-somos">
         <h1>QUEM SOMOS</h1>
         <div class="quem-somos-box">
+          <div class="row">
             <br>
-                <p class="text-justify">
-                    O Soccer Station oferece uma experiência imersiva para o amante de futebol. Com áreas digitais interativas, ambiente personalizado cheio de referência do esporte que é paixão nacional e uma gastronomia típica para você aproveitar com seus amigos e família.
-                </p>
-                <div class="quem-somos-video">
-                    <iframe width="425px" height="230px" src="https://www.youtube.com/embed/jfKfPfyJRdk" frameborder="0" allowfullscreen ></iframe>
-                </div>
+            <p class="text-justify col">
+                O Soccer Station oferece uma experiência imersiva para o amante de futebol. Com áreas digitais interativas, ambiente personalizado cheio de referência do esporte que é paixão nacional e uma gastronomia típica para você aproveitar com seus amigos e família.
+            </p>
+            <div class="quem-somos-video col">
+              <iframe width="425" height="230" src="https://www.youtube.com/embed/_UUN5zWN9GE?si=LBPaMjsSWSWljFB_" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
     </section>
    
     <section class="sobre" id="sobre">   
         <h1>NOSSAS SESSÕES</h1>
-        <div class="about-box">
-            <div class="about-box-img">
+        <div class="about-box row">
+            <div class="about-box-img col">
                 <img src="src/about-intro.png">
             </div>
-            <div class="about-box-txt intro-txt">
+            <div class="about-box-txt intro-txt col">
                 <p class="text-justify">
                     Nossas sessões tem duração de duas horas, em que você tem direito a um dos nossos sanduíches inspirados na culinária dos estádios, além de uma bebida e um acompanhamento. O ingresso te dá acesso completo às atrações e ao espaço do Soccer Station durante todo o tempo da sessão.
                 </p>
                 <button class="about-btn" href="https://www.sympla.com.br/produtor/soccerstation">COMPRA DE INGRESSO</button>
             </div>
         </div>
-        <div class="about-title magenta-shadow">TENHA UMA IMERSÃO NO UNIVERSO DO FUTEBOL</div>
-        <div class="about-box">
-            <div class="about-box-img">
+        <div class="about-title magenta-shadow container-fluid">TENHA UMA IMERSÃO NO UNIVERSO DO FUTEBOL</div>
+        <div class="about-box row">
+            <div class="about-box-img col">
                 <img src="src/about-img-1.png">
             </div>
-            <div class="about-box-txt">
+            <div class="about-box-txt col">
                 <h2>AMBIENTE TEMÁTICO</h2>
                 <p class="text-justify">
                     Se sinta dentro de um arcade e desafie suas habilidades futebolísticas de maneira exclusiva em nossas arenas. Projetadas para você se divertir testando sua capacidade de pontaria e seu controle de bola como você nunca viu. E você não precisa jogar sozinho, se quiser jogar em duplas ou trios, fique à vontade para se desafiar junto com seus amigos.
                 </p>
             </div>
         </div>
-        <div class="about-box box-right">
-            <div class="about-box-txt">
+        <div class="about-box box-right row">
+            <div class="about-box-txt col">
                 <h2>GAMES INTERATIVOS</h2>
-                <p class="text-justify">
+                <p class="text-justify col">
                     Nosso espaço é feito para você navegar se imergir na mistura entre futebol e tecnologia. Com diversas referências do passado, presente e futuro do esporte mais amado do país, venha ter uma experiência diferente de tudo que você já sentiu.
                 </p>
             </div>
-            <div class="about-box-img">
+            <div class="about-box-img col">
                 <img src="src/about-img-2.png">
             </div>
         </div>
@@ -109,14 +111,16 @@
                 <img src="src/about-img-3.png">
             </div>
             <div class="about-box-txt">
+              <div class="row">
                 <h2>GASTRONOMIA TÍPICA</h2>
-                <p class="text-justify">
+                <p class="text-justify col">
                     Nossa cozinha é inspirada nos sanduíches de estádios, não só do Brasil, mas do mundo e busca elevar o refeição que é para apenas matar a sua fome para ter de fato uma experiência gastronômica.
                 </p>
-                <a class="about-btn" href="src/Cardápio 29.11.pdf" target="_blank">NOSSO CARDÁPIO</a>
+              </div >
+                <a class="about-btn col" href="src/Cardápio 29.11.pdf" target="_blank">NOSSO CARDÁPIO</a>
             </div>
         </div>
-        <div class="gallery-section">
+        <div class="gallery-section container">
             <div class="about-title purple-shadow">VENHA VIVER ESSA EXPERIÊNCIA</div>
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -179,53 +183,55 @@
         <h1 class="event-title text-center">Eventos Exclusivos</h1>
         
         <h2>Soccer party</h2>
-        <div class="evento1-box">
-            <div>
+        <div class="evento1-box row">
+            <div class="col">
                 <p class="text-justify">A soccer station oferece uma forma totalmente nova e divertida de comemorar o aniversário de uma criança.  Diversão para todas as habilidades e idades, um espaço com a sua família e amigos.</p>
                 <p class="text-justify">Se você tem idade suficiente para chutar uma bola, você tem idade suficiente para desfrutar de uma festa de aniversário na soccer station.</p>
-                <div class="centered-btn">
+                <div class="centered-btn ">
                     <button class="evento1-btn">
-                        <img src="src/whatsapp-logo-rosa.png">
-                        QUER RESERVAR para uma FESTA ?
+                        <img src="src/whatsapp-logo-rosa.png" style="height: 96%; width: 26%;">
+                        <a href="https://wa.me/5511988832135">QUER RESERVAR para uma FESTA ?</a>
                     </button>
                 </div>
                 <br>
-                <p class="text-center">Adoramos uma festa na soccer station e ficaríamos muito felizes por você nos escolher como local para esse dia especial</p>
+                <p class="text-center ">Adoramos uma festa na soccer station e ficaríamos muito felizes por você nos escolher como local para esse dia especial</p>
             </div>
-            <div class="evento1-video">
-                <iframe width="425px" height="800rem" src="https://www.youtube.com/embed/MeF9D-xB1SI" frameborder="0" allowfullscreen></iframe>
+            <div class="evento1-video col">
+                <iframe width="425px" height="600rem" src="https://youtube.com/shorts/_UUN5zWN9GE?si=Dmk9GiIDi_jmrxoP" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
         
         <h2>Faça seu evento corporativo</h2>
-        <div class="evento2-box">
-            <div>
-                <p class="text-justify">Procurando maneiras de apimentar os dias da sua equipe? Não procure mais! realizar aquela confraternização corporativa aqui, na soccer station! Incluindo além do aluguel do espaço Sua equipe estará bem alimentada com uma variedade de lanches e bebidas para mantê-los energizados e prontos para competir por prêmios emocionantes.</p>
-                <button class="evento2-btn">
-                    <img src="src/whatsapp-logo-verde.png">
-                    Vamos realizar a social da empresa ?
-                </button>
+        <div class="evento2-box row">
+            <div >
+                <p class="container fluid col">Procurando maneiras de apimentar os dias da sua equipe? Não procure mais! realizar aquela confraternização corporativa aqui, na soccer station! Incluindo além do aluguel do espaço Sua equipe estará bem alimentada com uma variedade de lanches e bebidas para mantê-los energizados e prontos para competir por prêmios emocionantes.</p>
+              <div class="col">
+                <button class="evento2-btn ">
+                  <img src="src/whatsapp-logo-verde.png">
+                  <a href="https://wa.me/5511988832135">Vamos realizar a social da empresa ?</a>
+              </button>
+              </div>
             </div>
         </div>
 
         <section class="contato">
           <h2 >Leve a soccer para sua cidade</h2>
         </section>
-        <div class="evento3-box">
+        <div class="evento3-box row">
             <div >
-                <p class="text-justify">Imagina levar o soccer station para região onde você mora ?       Agora você pode</p>
-                <button class="evento3-btn">
+                <p class="col">Imagina levar o soccer station para região onde você mora ?       Agora você pode</p>
+                <button class="evento3-btn col">
                     <img src="src/formulario-logo.png">
                     Responda o formulário
                 </button>
             </div>
         </div>
     </section>
-    <section class="localizacao">
+    <section class="localizacao ">
         <h1 class="localizacao-title">LOCALIZAÇÃO</h1>
         <h3 class="enderecos-text">NOSSOS ENDEREÇOS:</h3>
-        <div class="localizacao-container">
-          <div class="map-box">
+        <div class="localizacao-container row">
+          <div class="map-box col">
             <h4 class="localizacao-text">
               Rua Juquis, 305 - Moema
             </h4>
@@ -234,7 +240,7 @@
             </h4>
             <iframe class="localizacao-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.8839646385104!2d-46.667649325387835!3d-23.6084940633241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a0f2f6446c1%3A0x51864a47adcc51a!2sR.%20Juquis%2C%20305%20-%20Moema%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004081-010!5e0!3m2!1spt-BR!2sbr!4v1709044595542!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-          <div class="map-box">
+          <div class="map-box col">
             <h4 class="localizacao-text">
               Rua Francisco Marengo, 1641 - Tatuapé
             </h4>
@@ -243,7 +249,7 @@
             </h4>
             <iframe class="localizacao-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.467892578807!2d-46.55936682539016!3d-23.551633361233527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e87b1d9048f%3A0xb8afa089132096b!2sR.%20Francisco%20Marengo%2C%201641%20-%20Tatuap%C3%A9%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003313-001!5e0!3m2!1spt-BR!2sbr!4v1709044987257!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-          <div class="map-box">
+          <div class="map-box col">
             <h4 class="localizacao-text">
               R. São José, 933 - centro
             </h4>
@@ -254,11 +260,11 @@
           </div>
         </div>
       </section>
-      <footer class="contatos">
+      <footer class="contatos row">
         <div class="contatos-container">
           <img class="contato-logo" src="./src/contato-logo.png">
           <h1 class="contatos-title">CONTATOS:</h1>
-          <div class="contato-box">
+          <div class="contato-box col">
             <h3 class="contato-text">MOEMA</h3>
             <div class="contato-number">
               <img src="./src/whats-icon.png" class="contato-icon">
@@ -269,7 +275,7 @@
               <h3 class="phone-text">+55 11 4485-##### </h3>
             </div>
           </div>
-          <div class="contato-box">
+          <div class="contato-box col">
             <h3 class="contato-text">TAUBATÉ</h3>
             <div class="contato-number">
               <img src="./src/whats-icon.png" class="contato-icon">
@@ -280,7 +286,7 @@
               <h3 class="phone-text">+55 11 4485-##### </h3>
             </div>
           </div>
-          <div class="contato-box">
+          <div class="contato-box col">
             <h3 class="contato-text">RIBEIRÃO PRETO</h3>
             <div class="contato-number">
               <img src="./src/whats-icon.png" class="contato-icon">
