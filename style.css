@@ -499,7 +499,7 @@ html {
 .evento1-btn:hover{
 
     transition : 1000ms;
-    padding: 10px 50px;
+    padding: 15px 35px;
     transform : translateY(-0px);
     background-color: #fff;
     color: #27B5AB;
