@@ -236,6 +236,7 @@ body {
 }
 
 
+
 /* Seção Home - Willy */
 
 /* Estilo para a transição suave */
@@ -256,11 +257,17 @@ html {
     height: 91px;
 }
 
-.home-video {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    border: none;
+.home-div {
+  width: 100vw; /* Largura total da tela */
+  height: 100vh; /* Altura total da tela */
+  overflow: hidden; /* Garante que qualquer conteúdo extra não seja exibido além dos limites da div */
+  position: relative; /* Necessário para posicionar o vídeo absolutamente dentro da div pai */
+}
+.home-div .home-video {
+  width: 100%; /* Ocupa toda a largura da div pai */
+  height: 100%; /* Ocupa toda a altura da div pai */
+  object-fit: cover; /* Redimensiona o vídeo para cobrir a área do contêiner, mantendo sua proporção de aspecto */
+  border: none; /* Removendo a borda, se houver */
 }
 
 .home-container {
